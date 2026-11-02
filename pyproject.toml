@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "repo-insight-cli"
+version = "0.1.0"
+description = "A small, testable GitHub repository analytics command-line tool"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+[project.scripts]
+repo-insight = "repo_insight:main"
+[tool.setuptools]
+py-modules = ["repo_insight"]
